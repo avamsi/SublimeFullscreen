@@ -6,6 +6,6 @@ class CustomFullScreen(sublime_plugin.WindowCommand):
 		self.window.run_command('toggle_menu')
 
 def plugin_loaded():
-	for window in sublime.windows():
-		window.run_command('toggle_full_screen')
-		window.run_command('toggle_menu')
+	window = sublime.active_window()
+	window.run_command('toggle_full_screen')
+	window.run_command('toggle_menu')
