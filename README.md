@@ -1,4 +1,5 @@
 # SublimeFullscreen
+Simple plugin to remove menu bar in Fullscreen mode.
 
 # How to install
 *Not available on Package Control*.
