@@ -11,7 +11,10 @@ class QuitCommand(sublime_plugin.WindowCommand):
         self.window.run_command('toggle_menu')
         self.window.run_command('close_window')
 
+
 def plugin_loaded():
-    window = sublime.active_window()
-    window.run_command('toggle_full_screen')
-    window.run_command('toggle_menu')
+    settings = sublime.load_settings('Fullscreen.sublime-settings')
+    if settings.get('fullscreen_on_start', False):
+        window = sublime.active_window()
+        window.run_command('toggle_full_screen')
+        window.run_command('toggle_menu')
