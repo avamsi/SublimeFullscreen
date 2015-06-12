@@ -1,0 +1,6 @@
+[
+    {
+        "caption": "Fullscreen: Toggle",
+        "command": "custom_full_screen"
+    }
+]
