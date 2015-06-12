@@ -1,0 +1,4 @@
+[
+    { "keys": ["f11"], "command": "custom_full_screen"},
+    { "keys": ["super+q"], "command": "quit"}
+]
